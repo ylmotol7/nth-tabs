@@ -16,7 +16,7 @@
     <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js"></script>
-    <script src="js/nth-tabs.min.js"></script>
+    <script src="js/nth-tabs.js"></script>
     <style>
         html, body {
             padding: 0;
@@ -49,7 +49,7 @@
             nthTabs.addTab({
                 id: 'home',
                 title: '首页',
-                url: "http://www.nethuige.com",
+                content: "这是首页~",
                 //content: '这是首页',
                 active: true,
                 allowClose: false
@@ -72,7 +72,7 @@
             ]);
 
             // 连贯操作示例
-            nthTabs.addTab({
+            /*nthTabs.addTab({
                 id: 'menu-manage',
                 title: '菜单管理',
                 active: false,
@@ -82,7 +82,7 @@
                 title: '角色管理',
                 active: false,
                 content: '这是角色管理页面~'
-            });
+            });*/
 
 
             // 重复新建一个菜单管理(因id已存在，所以不再次打开，直接切换)
@@ -140,6 +140,7 @@
             // 选项卡切换事件处理器
             nthTabs.tabToggleHandler(function (data) {
                 console.log(data);
+				nthTabs.locationTab(data.active.tabId);
             });
 
         });
@@ -160,7 +161,7 @@
             <button type="button" class="btn btn-primary" id="add-tabs">批量新建选项卡</button>
             <button type="button" class="btn btn-info" onclick="nthTabs.setActTab('role-manage');">置活动选项卡(角色管理)</button>
             <button type="button" class="btn btn-info" onclick="nthTabs.toggleTab('menu-manage')">切换选项卡(菜单管理)</button>
-            <button type="button" class="btn btn-info" onclick="nthTabs.locationTab('home')">定位选项卡</button>
+            <button type="button" class="btn btn-info" onclick="nthTabs.locationTab(nthTabs.getActiveId())">定位选项卡</button>
             <button type="button" class="btn btn-danger" onclick="nthTabs.delTab('role-manage')">关闭选项卡(角色管理)</button>
             <button type="button" class="btn btn-danger" onclick="nthTabs.delTab()">关闭当前选项卡</button>
             <button type="button" class="btn btn-danger" onclick="nthTabs.delOtherTab()">关闭其他</button>

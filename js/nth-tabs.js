@@ -42,10 +42,6 @@
             '<li role="separator" class="divider"></li>' +
             '<li><a href="#" class="tab-close-other">关闭其他选项卡</a></li>' +
             '<li><a href="#" class="tab-close-all">关闭全部选项卡</a></li>' +
-            '<li class="divider"></li>' +
-            '<li class="scrollbar-outer tab-list-scrollbar">' +
-            '<div class="tab-list-container"><ul class="tab-list"></ul></div>' +
-            '</li>' +
             '</ul>' +
             '</div>' +
             '</div>' +
@@ -54,7 +50,8 @@
         // 启用插件
         var run = function(){
             nthTabs.html(template);
-            event.onWindowsResize().onTabClose().onTabRollLeft().onTabRollRight().onTabList()
+            event.onWindowsResize().onTabClose().onTabRollLeft().onTabRollRight()
+				//.onTabList()
                 .onTabCloseOpt().onTabCloseAll().onTabCloseOther().onLocationTab().onTabToggle();
             return methods;
         };
@@ -144,12 +141,18 @@
                 // 得到选项卡容器对象
                 var contentTab = navTabOpt.parent().parent().parent();
                 // 情况1：前面同级选项卡宽度之和小于选项卡可视区域的则默认40
-                if (beforeTabsWidth <= settings.rollWidth) {
+				//console.log(beforeTabsWidth + '---==' + settings.rollWidth / 2);
+                if (beforeTabsWidth <= settings.rollWidth / 2) {
                     margin_left_total = 40;
+					//console.log('margin_left_total1 = ' + margin_left_total);
+                }else if (beforeTabsWidth > settings.rollWidth / 2 && beforeTabsWidth <= settings.rollWidth) {
+                    margin_left_total = 40 * 4 - settings.rollWidth / 2  + navTabOpt.width();
+					//console.log('margin_left_total2 = ' + margin_left_total);
                 }
                 // 情况2：前面同级选项卡宽度之和大于选项卡可视区域的，则margin为向左偏移整数倍的距离
                 else{
-                    margin_left_total = 40 - Math.floor(beforeTabsWidth / settings.rollWidth) * settings.rollWidth;
+                    margin_left_total = 40 * 4 - beforeTabsWidth + navTabOpt.width();
+					//console.log('margin_left_total3 = ' + margin_left_total);
                 }
                 contentTab.css("margin-left", margin_left_total);
                 return this;
@@ -326,7 +329,7 @@
             },
 
             // 选项卡清单
-            onTabList: function () {
+            /*onTabList: function () {
                 nthTabs.on("click", '.right-nav-list', function () {
                     var tabList = methods.getTabList();
                     var html = [];
@@ -338,7 +341,7 @@
                 nthTabs.find(".tab-list-scrollbar").scrollbar();
                 this.onTabListToggle();
                 return this;
-            },
+            },*/
 
             // 清单下切换选项卡
             onTabListToggle: function () {
