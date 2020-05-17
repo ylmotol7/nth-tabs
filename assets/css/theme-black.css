@@ -1,0 +1,91 @@
+/* Write your styles */
+html,
+body {
+    background-color: #282d2f;
+}
+
+a {
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+header{
+    border-bottom: 1px solid #282d2f;
+    -moz-box-shadow: 0 1px 4px #212d2f;
+    box-shadow: 0 1px 4px #212d2f;
+}
+
+.mc-header-fluid {
+    background: #2f3638;
+}
+.mc-header-logo {
+    background: none;
+}
+
+.mc-header-switch-btn{
+    color: #cfcfcf;
+}
+.mc-header-switch-btn {
+    background: #2f3638;
+    border-right: 1px solid #282d2f;
+}
+.mc-header-switch-btn:hover {
+    background: #282d2f;
+    color: #fff;
+}
+
+.mc-header-search-box{
+    border: 1px solid #ddd;
+}
+.mc-header-search-box:hover,
+.mc-header-search-box:active {
+    color: #cfcfcf;
+}
+.mc-header-search-box,
+.mc-header-search-btn {
+    color: #848c90;
+}
+.mc-header-search-btn:hover,
+.mc-header-search-btn:active {
+    color: #fff;
+}
+
+.mc-header-navbar {
+    color: #fff;
+}
+.mc-header-navbar a {
+    color: #cfcfcf;
+}
+.mc-header-navbar a:hover {
+    color: #fff;
+}
+
+ul.mc-dropdown-content {
+    background-color: #2f3638;
+    border: 1px solid #525e62;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item {
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item:focus,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item:focus {
+    background-color: #465154;
+    color: rgba(255, 255, 255, 0.7);
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications:last-child .mc-dropdown-menu-notifications-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-messages:last-child .mc-dropdown-menu-messages-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-notifications:last-child .mc-dropdown-menu-notifications-item:focus,
+ul.mc-dropdown-content .mc-dropdown-menu-messages:last-child .mc-dropdown-menu-messages-item:focus {
+    color: #fff;
+}
+
+.mc-index-right{
+    border-left: 1px solid #282d2f;
+}

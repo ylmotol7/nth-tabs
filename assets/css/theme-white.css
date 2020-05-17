@@ -1,0 +1,106 @@
+/* Write your styles */
+html,
+body {
+    background: #e9ecf3;
+}
+
+a {
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+header{
+    border-bottom: 1px solid #eee;
+    -moz-box-shadow: 0 1px 4px #ddd;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.mc-header-fluid {
+    background: #fff;
+}
+.mc-header-logo {
+    background: #fff;
+}
+
+.mc-header-switch-btn{
+    color: #cfcfcf;
+}
+.mc-header-switch-btn {
+    background: #fff;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.mc-header-switch-btn span:hover {
+    background: #fff;
+    color: #999;
+}
+
+.mc-header-search-box{
+    border: 1px solid #ddd;
+}
+.mc-header-search-box:hover,
+.mc-header-search-box:active {
+    color: #333;
+}
+.mc-header-search-box,
+.mc-header-search-btn {
+    color: #848c90;
+}
+.mc-header-search-btn:hover,
+.mc-header-search-btn:active {
+    color: #23527c;
+}
+
+.mc-header-navbar {
+    color: #fff;
+}
+.mc-header-navbar a {
+    color: #999;
+}
+.mc-header-navbar a:hover {
+    color: #999;
+}
+
+ul.mc-dropdown-content {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item {
+    border-bottom: 1px solid #eee;
+    color: #999;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item:focus,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item:focus {
+    background-color: #f5f5f5;
+    color: #999;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications:last-child .mc-dropdown-menu-notifications-item:last-child:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-messages:last-child .mc-dropdown-menu-messages-item:hover,
+ul.mc-dropdown-content .mc-dropdown-menu-notifications:last-child .mc-dropdown-menu-notifications-item:last-child:focus,
+ul.mc-dropdown-content .mc-dropdown-menu-messages:last-child .mc-dropdown-menu-messages-item:last-child:focus {
+    color: #333;
+}
+
+.mc-index-left,
+.mc-index-right{
+    background-color: #fff;
+}
+.mc-index-right{
+    border-left: 1px solid #eee;
+}
+.mc-index-sidebar-item > a{
+    color: #666;
+}
+.mc-index-sidebar-item li a {
+    color: #888;
+}
+.admin-sidebar-sub {
+    box-shadow: 0 16px 8px -15px #e2e2e2 inset;
+    background: #ccc;
+}

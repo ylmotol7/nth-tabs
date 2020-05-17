@@ -1,0 +1,216 @@
+/* Write your styles */
+html,
+body {
+    overflow: inherit;
+    height: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+header {
+    z-index: 1200;
+    position: relative;
+}
+
+.mc-header-logo {
+    width: 200px;
+    height: 56px;
+    display: table;
+    text-align: center;
+    position: relative;
+    z-index: 1300;
+}
+.mc-header-logo a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.mc-header-logo img {
+    width: 120px;
+}
+
+.mc-header-fluid {
+    margin-left: 200px;
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mc-header-switch-btn {
+    margin: 0 0 0 -20px;
+    float: left;
+    padding: 0px 22px;
+    font-size: 20px;
+    line-height: 56px;
+}
+
+.mc-header-search-form {
+    height: 56px;
+    line-height: 52px;
+    margin-left: 10px;
+}
+.mc-header-search-box,
+.mc-header-search-btn {
+    transition: all 0.4s ease-in-out;
+    color: #848c90;
+    background: none;
+    border: none;
+    outline: none;
+}
+.mc-header-search-box {
+    font-size: 14px;
+    padding:5px;
+}
+.mc-header-search-btn {
+    font-size: 15px;
+}
+
+.mc-header-navbar li {
+    float: left;
+}
+.mc-header-navbar a {
+    line-height: 56px;
+    display: block;
+    padding: 0 16px;
+    position: relative;
+}
+.mc-header-navbar a .item-feed-badge {
+    position: absolute;
+    top: 9px;
+    left: 25px;
+}
+
+ul.mc-dropdown-content {
+    padding: 10px;
+    margin-top: 0;
+    width: 300px;
+    border-radius: 0;
+}
+ul.mc-dropdown-content li {
+    float: none;
+}
+ul.mc-dropdown-content:before,
+ul.mc-dropdown-content:after {
+    display: none;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-title {
+    font-size: 12px;
+    float: left;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-time {
+    float: right;
+    text-align: right;
+    font-size: 11px;
+    width: 50px;
+    margin-left: 10px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications:last-child .mc-dropdown-menu-notifications-item {
+    text-align: center;
+    border: none;
+    font-size: 12px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications:last-child .mc-dropdown-menu-notifications-item i {
+    margin-left: -6px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages:last-child .mc-dropdown-menu-messages-item {
+    text-align: center;
+    border: none;
+    font-size: 12px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages:last-child .mc-dropdown-menu-messages-item i {
+    margin-left: -6px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-notifications-item,
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item {
+    padding: 12px;
+    line-height: 20px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item .menu-messages-ico {
+    line-height: initial;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item .menu-messages-ico img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item .menu-messages-time {
+    float: right;
+    text-align: right;
+    font-size: 11px;
+    width: 40px;
+    margin-left: 10px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item .menu-messages-content {
+    display: block;
+    font-size: 13px;
+    margin-left: 45px;
+    margin-right: 50px;
+}
+ul.mc-dropdown-content .mc-dropdown-menu-messages-item .menu-messages-content .menu-messages-content-time {
+    margin-top: 3px;
+    font-size: 11px;
+}
+.mc-index-main{
+    height: calc(100% - 56px - 1px);
+}
+.mc-index-left{
+    width: 200px;
+    height: 100%;
+    font-size: 13px;
+    float: left;
+}
+.mc-index-right{
+    width: calc(100% - 200px);
+    height: 100%;
+}
+.mc-index-sidebar-item > a > i{
+    padding-right: 7px;
+}
+.admin-sidebar-sub li a{
+    height: 40px;
+    line-height: 40px;
+}
+
+.am-tabs-nav li {
+    position: relative;
+    z-index: 1;
+}
+
+.am-tabs-nav .am-icon-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.am-tabs-nav .am-icon-close:hover {
+    color: #333;
+}
+
+.am-tabs-nav .am-icon-close ~ a {
+    padding-right: 25px!important;
+}
+
+.am-tabs > ul{height: 45px;overflow:hidden;}
+.am-tabs > ul > li{float: left;}

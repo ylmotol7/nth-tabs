@@ -26,18 +26,18 @@
 
         var template =
             '<div class="page-tabs">' +
-            '<a href="#" class="roll-nav roll-nav-left"><span class="fa fa-angle-double-left"></span></a>' +
+            '<a href="#" class="roll-nav roll-nav-left"><span class="am-icon-angle-double-left"></span></a>' +
             '<div class="content-tabs">' +
             '<div class="content-tabs-container">' +
             '<ul class="nav nav-tabs"></ul>' +
             '</div>' +
             '</div>' +
-            '<a href="#" class="roll-nav roll-nav-right"><span class="fa fa-angle-double-right"></span></a>' +
+            '<a href="#" class="roll-nav roll-nav-right"><span class="am-icon-angle-double-right"></span></a>' +
             '<div class="dropdown roll-nav right-nav-list">' +
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' +
-            '<span class="tab-down"></span></a>' +
+            '<span class="am-icon-caret-down"></span></a>' +
             '<ul class="dropdown-menu">' +
-            '<li><a href="#" class="tab-location">定位当前选项卡</a></li>' +
+            '<li><a href="#">定位当前选项卡</a></li>' +
             '<li><a href="#" class="tab-close-current">关闭当前选项卡</a></li>' +
             '<li role="separator" class="divider"></li>' +
             '<li><a href="#" class="tab-close-other">关闭其他选项卡</a></li>' +
@@ -101,7 +101,7 @@
                 tab.push('<a href="#' + options.id + '" data-toggle="tab">');
                 tab.push('<span>' + options.title + '</span>');
                 tab.push('</a>');
-                allowClose ? tab.push('<i class="icon nth-icon-close-mini tab-close"></i>') : '';
+                allowClose ? tab.push('<i class="am-icon-close tab-close"></i>') : '';
                 tab.push('</li>');
                 nthTabs.find(".nav-tabs").append(tab.join(''));
                 //tab-content
