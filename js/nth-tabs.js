@@ -15,6 +15,7 @@
             active: true, // 新建选项卡，是否为活动状态，默认启用
             location: true, //新建选项卡，是否自动定位，默认启用
             fadeIn: true, // 新建选项卡，淡入效果，默认启用
+			showLocationBtn: false, //定位当前选项卡
             rollWidth: nthTabs.width() - 120 // 可滚动的区域宽度，120即3个操作按钮的宽度
         };
 
@@ -37,9 +38,8 @@
             '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' +
             '<span class="am-icon-caret-down"></span></a>' +
             '<ul class="dropdown-menu">' +
-            '<li><a href="#">定位当前选项卡</a></li>' +
-            '<li><a href="#" class="tab-close-current">关闭当前选项卡</a></li>' +
-            '<li role="separator" class="divider"></li>' +
+			'<li><a href="#" class="tab-close-current">关闭当前选项卡</a></li>' +
+			(settings.showLocationBtn ?'<li><a href="#">定位当前选项卡</a></li>':'') +
             '<li><a href="#" class="tab-close-other">关闭其他选项卡</a></li>' +
             '<li><a href="#" class="tab-close-all">关闭全部选项卡</a></li>' +
             '</ul>' +
@@ -111,7 +111,7 @@
                     tabContent.push('<iframe src="'+options.url+'" frameborder="0" name="iframe-'+frameName+'" class="nth-tabs-frame"></iframe>');
                     frameName++;
                 }else{
-                    tabContent.push('<div class="nth-tabs-content">'+options.content+"</div>");
+                    tabContent.push('<div class="nth-tabs-content am-fl">'+options.content+"</div>");
                 }
                 tabContent.push('</div>');
                 nthTabs.find(".tab-content").append(tabContent.join(''));
